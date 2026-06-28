@@ -17,6 +17,7 @@ real lab data** downloaded at runtime from the projects' public repositories.
 | 02 | **Respiration Rate from Thermal Video** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sustainability-lab/acm-health-notebooks/blob/main/02_Respiration_Rate_from_Thermal_Video.ipynb) | Respiration from a thermal ROI; **RR→Energy-Expenditure** (JoulesEye) | Real 72 s thermal clip (`ApneaEye_Demo`) → 17.6 brpm |
 | 03 | **Sleep Apnea Detection & AHI** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sustainability-lab/acm-health-notebooks/blob/main/03_Sleep_Apnea_Detection_and_AHI.ipynb) | Central/obstructive apnea + hypopnea → Precision/Sensitivity/Specificity → **AHI** (ApneaEye) | Real thermal clip for the airflow front-end |
 | 04 | **Lung Function from Breathing Sound** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sustainability-lab/acm-health-notebooks/blob/main/04_Lung_Function_from_Breathing_Sound.ipynb) | Mask-mic spirometry: envelope, **MFCC from scratch**, flow–volume, FEV1/FVC (SpiroMask) | Real N95 mask-mic FVC audio + clinical ground truth (`SpiroMask_DIY`) |
+| 05 | **Can a VLM read a Thermal image?** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sustainability-lab/acm-health-notebooks/blob/main/05_VLMs_on_Thermal_Imagery_ThermEval.ipynb) | Benchmarking VLMs on thermal imagery: colormap robustness, optional live Gemini, accuracy/MAE scoring (ThermEval) | Real ThermEval task labels (T1/T3/T5/T6) + real thermal frame |
 
 ## Running
 
@@ -33,6 +34,7 @@ Real samples are fetched at runtime from the original authors' public repos:
 - **Thermal video** — [`AyushShrivstava/ApneaEye_Demo`](https://github.com/AyushShrivstava/ApneaEye_Demo) (ApneaEye)
 - **Mask-mic audio + ground truth** — [`AyushShrivstava/SpiroMask_DIY`](https://github.com/AyushShrivstava/SpiroMask_DIY) and [`rishi-a/SpiroMask`](https://github.com/rishi-a/SpiroMask) (SpiroMask, ACM HEALTH '23)
 - **JoulesEye** — [`rishi-a/JoulesEye-Release`](https://github.com/rishi-a/JoulesEye-Release) (ACM IMWUT '24)
+- **ThermEval** — [`AyushShrivstava/ThermEval_KDD`](https://github.com/AyushShrivstava/ThermEval_KDD) and the [Kaggle dataset](https://www.kaggle.com/datasets/shriayush/thermeval) (KDD 2026, under review)
 
 Real, labelled overnight **apnea** recordings are clinical and access-restricted
 (ApneaEye was evaluated at AIIMS New Delhi), so notebook 03 uses synthetic
